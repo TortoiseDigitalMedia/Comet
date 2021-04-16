@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Comet</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div id="main">
+        <nav>
+            <img src="Logo.jpeg" width="80px">
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="Gallery.html">Gallery</a>
+                </li>
+                <li>
+                    <a href="About us.html">About Us</a>
+                </li>
+                <li>
+                    <a href="Contact.html">Contact</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="center">
+            <h1>
+                <Span class="title"> Comet Day </Span>
+            </h1>
+            <div id="Clock">
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+        <script src="countdown.js"></script>
+        <script type="text/javascript">
+            $('#Clock').countdown('2021/8/12', function(event) {
+                var $this = $(this).html(event.strftime('' +
+                    '<div><span>%w</span><span>Weeks</span></div>' +
+                    '<div><span>%d</span><span>Days</span></div>' +
+                    '<div><span>%H</span><span>Hr</span></div>' +
+                    '<div><span>%M</span><span>Min</span></div>' +
+                    '<div><span>%S</span><span>Sec</span></div>'))
+            })
+        </script>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+}
+
+section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("Wallpaper2.jpg");
+}
+
+.about-section {
+    background: url("Logo.jpeg") no-repeat left;
+    background-size: 55%;
+    overflow: hidden;
+    padding: 90px 0;
+}
+
+.inner-container {
+    width: 69%;
+    float: right;
+    background-color: #2e2e2e;
+    padding: 15px;
+}
+
+.inner-container h1 {
+    margin-bottom: 30px;
+    font-size: 30px;
+    font-weight: 900;
+    color: #ffffff;
+}
+
+.Top1 {
+    color: #ffffff
+}
+
+.text {
+    font-size: 17px;
+    color: #ffffff;
+    text-align: justify;
+    margin-bottom: 40px;
+}
+
+ul li {
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+.Tortoise a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+@media screen and (max-width: 1200px) {
+    .inner-container {
+        padding: 80px;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .about-section {
+        background-size: 100%;
+        padding: 100px 40px;
+    }
+    .inner-container {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .about-section {
+        padding: 0;
+    }
+    .inner-container {
+        padding: 60px;
+    }
+}

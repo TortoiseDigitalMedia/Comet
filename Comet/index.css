@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#main {
+    width: 100%;
+    height: 100vh;
+    background: url("Wallpaper.jpg") no-repeat center center fixed;
+    background-size: cover;
+}
+
+nav {
+    width: 100%;
+    height: 80px;
+    background-color: #0005;
+    opacity: 0.9;
+    line-height: 80px;
+}
+
+nav ul {
+    float: right;
+    margin-right: 30px;
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    transition: 0.8s all;
+}
+
+nav ul li:hover {
+    background-color: rgb(255, 255, 0);
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 30px;
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+    color: yellow;
+    font-size: 3em;
+}
+
+h1 span {
+    font-size: 2em;
+    line-height: .8em;
+}
+
+#Clock {
+    display: flex;
+    width: 570px;
+    margin: 0 auto;
+}
+
+#Clock div {
+    position: relative;
+    width: 100px;
+    padding: 20px;
+    margin: 0 5px;
+    background: #262626;
+    color: #fff;
+    border: 2px solid #000;
+}
+
+#Clock div:last-child {
+    background: rgb(151, 151, 25);
+}
+
+#Clock div:before {
+    content: '';
+    position: absolute;
+    background: rgba(255, 255, 255, .2);
+}
+
+#Clock div span {
+    display: block;
+    text-align: center;
+}
